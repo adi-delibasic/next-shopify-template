@@ -10,12 +10,8 @@ export default function Home() {
 
 
   return (
-    <div>
-      {
-        products.map((product) => (
-          <h1 key={product.id}>{product.title}</h1>
-        ))
-      }
+    <div className={`text-center`}>
+      <h1 className={`text-4xl p-4 uppercase`}>Shopify storefront</h1>
     </div>
   )
 }
