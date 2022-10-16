@@ -16,6 +16,8 @@ export const ShopContextProvider = (props) => {
   const [product, setProduct] = useState(null);
   const [checkout, setCheckout] = useState(null)
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
+
 
 
   /**
@@ -109,6 +111,8 @@ export const ShopContextProvider = (props) => {
         openCart: openCart,
         addItemToCheckout: addItemToCheckout,
         removeLineItem: removeLineItem,
+        setMenuOpen: setMenuOpen,
+        menuOpen: menuOpen
       }}>
       {props.children}
     </ShopContext.Provider>
